@@ -1,10 +1,48 @@
-﻿@page
+@page
 @model IndexModel
 @{
     ViewData["Title"] = "Home page";
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-4">Welcome to Todo App</h1>
+    <p class="lead">A simple todo application built with ASP.NET Core Razor Pages</p>
+    <hr class="my-4">
+    <p>Manage your tasks efficiently with this easy-to-use todo application.</p>
+    <div class="mb-4">
+        <a class="btn btn-primary btn-lg me-2" asp-page="/Todos/Index" role="button">View Todos</a>
+        <a href="https://blossom-cloud.com" target="_blank" class="btn btn-outline-primary btn-lg d-inline-flex align-items-center">
+            Deploy on Blossom
+            <svg class="ms-2" width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+            </svg>
+        </a>
+    </div>
+</div>
+
+<div class="row mt-5">
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Create Todos</h5>
+                <p class="card-text">Add new tasks to your todo list with a title and optional description.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Track Progress</h5>
+                <p class="card-text">Mark tasks as complete and keep track of your progress.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Organize Tasks</h5>
+                <p class="card-text">View all your tasks in one place and manage them effectively.</p>
+            </div>
+        </div>
+    </div>
 </div>

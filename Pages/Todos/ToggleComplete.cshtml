@@ -1,0 +1,25 @@
+@page "{id:int}"
+@model DemoApp.Pages.Todos.ToggleCompleteModel
+@{
+    ViewData["Title"] = "Toggle Complete";
+}
+
+<h1>Toggle Complete</h1>
+
+<h3>Are you sure you want to toggle the completion status of this todo?</h3>
+<div>
+    <dl class="row">
+        <dt class="col-sm-2">@Html.DisplayNameFor(model => model.Todo.Title)</dt>
+        <dd class="col-sm-10">@Html.DisplayFor(model => model.Todo.Title)</dd>
+    </dl>
+    <dl class="row">
+        <dt class="col-sm-2">@Html.DisplayNameFor(model => model.Todo.IsComplete)</dt>
+        <dd class="col-sm-10">@(Model.Todo.IsComplete ? "Yes" : "No")</dd>
+    </dl>
+</div>
+
+<form method="post">
+    <input type="hidden" asp-for="Todo.Id" />
+    <input type="submit" value="Toggle" class="btn btn-primary" />
+    <a asp-page="./Index" class="btn btn-outline-secondary">Back to List</a>
+</form>

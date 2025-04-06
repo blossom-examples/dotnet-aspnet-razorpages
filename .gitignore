@@ -1,0 +1,62 @@
+## Build Results
+bin/Debug
+bin/publish
+bin/Release
+obj/
+
+## User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## Rider / VSCode
+.idea/
+.vscode/
+
+## ASP.NET Core
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+## Visual Studio
+.vs/
+.vscode/
+*.code-workspace
+
+## OS-generated
+.DS_Store
+Thumbs.db
+
+## Logs
+*.log
+
+## dotnet secrets / user configs
+secrets.json
+
+## Publish output
+wwwroot/
+*.db
+*.sqlite
+*.pdb
+*.mdb
+
+## Node/NPM (if using npm or webpack)
+node_modules/
+npm-debug.log
+dist/
+build/
+
+## Docker (optional)
+**/.docker/
+Dockerfile.*
+docker-compose*
+
+## Optional: environment config files
+.env
+.env.*
+
+## Don't ignore these:
+!wwwroot/**
+!*.cshtml
+!*.cs

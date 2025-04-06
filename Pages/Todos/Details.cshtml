@@ -1,0 +1,30 @@
+@page "{id:int}"
+@model DemoApp.Pages.Todos.DetailsModel
+@{
+    ViewData["Title"] = "Todo Details";
+}
+
+<h1>Todo Details</h1>
+
+<div>
+    <dl class="row">
+        <dt class="col-sm-2">@Html.DisplayNameFor(model => model.Todo.Title)</dt>
+        <dd class="col-sm-10">@Html.DisplayFor(model => model.Todo.Title)</dd>
+    </dl>
+    <dl class="row">
+        <dt class="col-sm-2">@Html.DisplayNameFor(model => model.Todo.Description)</dt>
+        <dd class="col-sm-10">@Html.DisplayFor(model => model.Todo.Description)</dd>
+    </dl>
+    <dl class="row">
+        <dt class="col-sm-2">@Html.DisplayNameFor(model => model.Todo.IsComplete)</dt>
+        <dd class="col-sm-10">@(Model.Todo.IsComplete ? "Yes" : "No")</dd>
+    </dl>
+    <dl class="row">
+        <dt class="col-sm-2">@Html.DisplayNameFor(model => model.Todo.CreatedAt)</dt>
+        <dd class="col-sm-10">@Html.DisplayFor(model => model.Todo.CreatedAt)</dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Todo.Id" class="btn btn-primary">Edit</a>
+    <a asp-page="./Index" class="btn btn-outline-secondary">Back to List</a>
+</div>
