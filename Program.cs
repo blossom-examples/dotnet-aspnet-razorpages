@@ -10,7 +10,7 @@ builder.Services.AddRazorPages();
 var databaseUrl = Environment.GetEnvironmentVariable("DATABASE_URL");
 var connectionString = databaseUrl != null
     ? ParseDatabaseUrl(databaseUrl)
-    : "Host=localhost;Database=todo_dev;Username=postgres;Password=postgres";
+    : "Host=localhost;Database=example_dotnet_razorpages_dev;Username=postgres;Password=postgres";
 
 // Add DbContext
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
