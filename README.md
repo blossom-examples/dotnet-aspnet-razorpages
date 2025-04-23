@@ -1,5 +1,7 @@
 # ASP.NET Core Razor Pages Todo App
 
+[![Blossom Badge](https://img.boltops.com/images/blossom/logos/blossom-powered-by.png)](https://blossom-cloud.com)
+
 A simple Todo application built with ASP.NET Core Razor Pages and PostgreSQL, ready to deploy on [Blossom](https://blossom-cloud.com).
 
 ## Quick Start
