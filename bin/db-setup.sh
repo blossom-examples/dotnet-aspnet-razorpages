@@ -1,7 +1,6 @@
 #!/bin/bash
 
 echo "Setting up database..."
-echo "DATABASE_URL: $DATABASE_URL"
 set -eux
 
 # Change to the publish directory
